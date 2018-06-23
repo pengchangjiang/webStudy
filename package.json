@@ -1,0 +1,22 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "各种学习用",
+  "dependencies": {
+    "sqlite3": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pengchangjiang/webStudy.git"
+  },
+  "author": "pcj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pengchangjiang/webStudy/issues"
+  },
+  "homepage": "https://github.com/pengchangjiang/webStudy#readme"
+}

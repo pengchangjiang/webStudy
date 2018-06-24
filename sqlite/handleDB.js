@@ -1,10 +1,16 @@
 var SQLite3 = require('sqlite3').verbose();
+const model = require('./model');
+const schema = require('./schema');
 
 class HandleDB {
+    get Model() { return model; }
+    get Schema() { return schema; }
+    // schema
     constructor(options) {
         this.dbfile = options && options.dbfile || __dirname + '/data/test.db';
         this.tableName = options && options.tableName || 'testTable';
         this.db = null;
+        this.Model.dbHander = this;
     }
     connectDB() {
         return new Promise((resolve, reject) => {
